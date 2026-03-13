@@ -113,38 +113,11 @@ const products = [
   },
 ];
 
-/**
- * Initializes products in localStorage if they don't exist.
- */
-const initializeProducts = () => {
-  if (!localStorage.getItem("products")) {
-    localStorage.setItem("products", JSON.stringify(products));
-  }
-};
-
-/**
- * Returns all products from storage.
- */
 export const getProducts = () => {
-  const storedProducts = localStorage.getItem("products");
-  return storedProducts ? JSON.parse(storedProducts) : products;
+    const storedProducts = localStorage.getItem("products");
+    return storedProducts ? JSON.parse(storedProducts) : products;
 };
 
-/**
- * Finds a single product by ID.
- */
 export const getProductById = (id) => {
-  const allProducts = getProducts();
-  return allProducts.find((p) => p.id === id);
+    return getProducts().find(p => p.id === id);
 };
-
-/**
- * Utility to get unique categories for filter dropdowns.
- */
-export const getCategories = () => {
-  const allProducts = getProducts();
-  return ["all", ...new Set(allProducts.map((p) => p.category))];
-};
-
-// Run initialization immediately on import
-initializeProducts();

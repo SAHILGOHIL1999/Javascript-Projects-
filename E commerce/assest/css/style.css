@@ -1,12 +1,10 @@
-/* Global Reset & Typography */
 body {
     font-family: 'Inter', -apple-system, sans-serif;
     background-color: #f8f9fa;
     color: #2d3436;
-    padding-top: 72px; /* Smooth padding for the fixed navbar */
+    padding-top: 72px; 
 }
 
-/* Professional Navbar */
 .navbar {
     background-color: #ffffff !important;
     border-bottom: 1px solid #e9ecef;
@@ -27,7 +25,7 @@ body {
     color: #0d6efd !important;
 }
 
-/* Hero Section: Clean & Minimal */
+/* Hero Section */
 .hero-section {
     background-color: #ffffff;
     border-bottom: 1px solid #e9ecef;
@@ -45,7 +43,7 @@ body {
     border: 1px solid #dee2e6;
     border-radius: 12px;
     padding: 20px;
-    margin-top: -30px; /* Overlaps hero slightly for style */
+    margin-top: -30px; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
 
@@ -78,7 +76,7 @@ body {
     font-weight: 600;
 }
 
-/* Cart Specific Styles */
+/* Cart */
 .cart-item-row {
     background: #fff;
     border: 1px solid #e9ecef;
