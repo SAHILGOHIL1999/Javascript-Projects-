@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Dashboard</title>
+
+   <!-- CSS CDN Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>ALL API Dashboard</h1>
+
+    <div class="container">
+        <section>
+            <h3>🐶 Random Dog Image</h3>
+            <button onclick="getDog()">Get New Dog</button>
+            <img id="dogImage" src="https://via.placeholder.com/250x150?text=Dog+Photo" alt="Dog">
+        </section>
+
+        <section>
+            <h3>🦠 COVID-19 Tracker</h3>
+            <input id="country" type="text" placeholder="Enter country (e.g. India)">
+            <button onclick="getCoronaData()">Get Stats</button>
+            <div class="result-area" id="coronaResult">
+                <p id="cases">Total Cases: -</p>
+                <p id="deaths">Total Deaths: -</p>
+                <p id="recovered">Recovered: -</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>🎬 Movie Finder</h3>
+            <input id="movieName" type="text" placeholder="Enter movie name">
+            <button onclick="getMovieData()">Search Movie</button>
+            <div class="result-area" id="movieResult">Search results will appear here...</div>
+        </section>
+
+        <section>
+            <h3>☁️ Weather Report</h3>
+            <input id="cityName" type="text" placeholder="Enter city name">
+            <button onclick="getWeatherData()">Check Weather</button>
+            <div class="result-area" id="weatherResult">Temperature: --°C</div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
