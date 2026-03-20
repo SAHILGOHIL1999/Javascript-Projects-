@@ -938,7 +938,7 @@ body {
 .card-img-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background-size: cover;
     object-position: center top;
     display: block;
     transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1245,12 +1245,14 @@ body {
 
 /* Week Feature */
 .section-wrap {
-    margin: 60px 20px;
+    margin: 90px 20px 90px 20px; 
+    background-color: rgb(228, 234, 238);
 }
 
 .section-subtitle {
     color: #8b2252;
     letter-spacing: 0.02em;
+    padding-top: 20px;
 }
 
 .section-heading {
@@ -1265,6 +1267,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 6px;
+    padding: 55px 20px 55px 20px;
 }
 
 .featured-item {
@@ -1430,7 +1433,6 @@ body {
     display: block;
     background: transparent;
     transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), filter 0.35s ease;
-    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.08));
 }
 
 .featured-item:hover .featured-thumb img {
@@ -1442,6 +1444,171 @@ body {
     .featured-area {
         grid-template-columns: 1fr;
     }
+}
+
+/* Trending Arrivals */
+.trend-section {
+    max-width: 1160px;
+    display: grid;
+    grid-template-columns: 1fr 290px;
+    grid-template-rows: auto auto;
+    gap: 0 40px;
+    margin: 0 350px;
+}
+
+.trend-header {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 32px;
+}
+
+.trend-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c0324b;
+    margin-bottom: 8px;
+}
+
+.trend-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #1a1a1a;
+}
+
+.trend-grid {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.trend-card {
+    background: #f4f4f2;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-card-img {
+    aspect-ratio: 3 / 3.6;
+    overflow: hidden;
+    background: #f4f4f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trend-card-img img {
+    width: 75%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.trend-card-body {
+    padding: 16px 18px 20px;
+}
+
+.trend-card-store {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888888;
+    margin-bottom: 4px;
+}
+
+.trend-card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    line-height: 1.25;
+}
+
+.trend-card-price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.trend-price-current {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.trend-price-original {
+    font-size: 13px;
+    color: #aaaaaa;
+    text-decoration: line-through;
+}
+
+/* --- Sidebar Banner --- */
+.trend-banner {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    width: 290px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(160deg, #f9c8d0 0%, #e8829a 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.trend-banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.trend-banner-overlay {
+    position: relative;
+    z-index: 1;
+    padding: 28px 24px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.62) 0%, transparent 100%);
+}
+
+.trend-banner-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.trend-dots {
+    display: flex;
+    gap: 7px;
+    margin-top: 28px;
+    justify-content: center;
+}
+
+.trend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d1d1d1;
+}
+
+.trend-dot-active {
+    background: #c0324b;
 }
 
 /* SCROLL TO TOP */
