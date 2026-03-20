@@ -14,10 +14,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet" />
 
     <!-- Style css -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -367,41 +366,440 @@
     </div>
 
     <!-- Shop by Category -->
-    <div class="product-header">
-        <p class="subtitle">All Product Shop</p>
-        <h1>Customer Favorite Style Product</h1>
-
-        <nav class="categories">
-            <a href="#" class="active">All Collection <span class="badge">26</span></a>
-            <span class="dot">•</span>
-            <a href="#">Shoes</a>
-            <span class="dot">•</span>
-            <a href="#">Clothing</a>
-            <span class="dot">•</span>
-            <a href="#">Bags</a>
-        </nav>
+    <div class="section-header">
+        <p class="section-label">Shop by Category</p>
+        <h2 class="section-title">Popular on the Shofy store.</h2>
     </div>
 
     <!-- All Product Shop -->
-    <div class="product-grid">
-        <div class="product-card">
-            <div class="image-container">
-                <img src="./assets/images/product/product-1.jpg" alt="Whitetails Women's Open Sky">
+    <div class="carousel-container">
+        <div class="carousel-list" id="carouselList">
+
+            <div class="carousel-item">
+                <div class="carousel-card">
+                    <img src="./assets/images/category/category-1.jpg" alt="category-1" />
+                </div>
             </div>
-            <div class="product-info">
-                <p class="brand">Whitetails Store</p>
-                <h3 class="product-name">Whitetails Women's Open Sky</h3>
-                <div class="rating">★★★★★</div>
-                <div class="price">
-                    <span class="current-price">$340.00</span>
-                    <span class="old-price">$475.00</span>
+
+            <div class="carousel-item">
+                <div class="carousel-card">
+                    <img src="./assets/images/category/category-2.jpg" alt="category-2" />
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel-card">
+                    <img src="./assets/images/category/category-3.jpg" alt="category-3" />
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel-card">
+                    <img src="./assets/images/category/category-4.jpg" alt="category-4" />
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel-card">
+                    <img src="./assets/images/category/category-5.jpg" alt="category-5" />
+                </div>
+            </div>
+
+            <!-- Nav Arrows -->
+            <button class="nav-arrow arrow-prev" id="prevBtn" aria-label="Previous">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </button>
+            <button class="nav-arrow arrow-next" id="nextBtn" aria-label="Next">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="9 18 15 12 9 6" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- All Product-Text -->
+        <div class="section-product-text">
+            <h3 class="sub-label">All Product Shop</h3>
+
+            <h1 class="main-title">Customer Favorite Style Product</h1>
+
+            <div class="filter-row">
+                <div class="filter-item active">
+                    <span class="tab-badge">26</span>
+                    All Collection
+                </div>
+                <span class="dot"></span>
+                <div class="filter-item">Shoes</div>
+                <span class="dot"></span>
+                <div class="filter-item">Clothing</div>
+                <span class="dot"></span>
+                <div class="filter-item">Bags</div>
+            </div>
+        </div>
+
+        <!-- All Shop Product -->
+        <div class="product-grid">
+
+            <!-- Card 1 -->
+            <div class="product-card">
+                <div class="card-img-box">
+                    <img src="./assets/images/product/2/prodcut-1.jpg" alt="product-1">
+                    <div class="side-actions">
+                        <button class="side-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="tooltip">Add to Cart</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span class="tooltip">Quick View</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="tooltip">Add to Wishlist</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-solid fa-arrow-right-arrow-left">
+                                <span class="tooltip">Add to Compare</span>
+                            </i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="product-category">Whitetails Store</p>
+                    <h3 class="product-name">Whitetails Women's Open Sky</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="product-price">$340.00 <span class="old-price">$475.00</span></p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="product-card">
+                <div class="card-img-box">
+                    <img src="./assets/images/product/2/prodcut-2.jpg" alt="product-2">
+                    <div class="side-actions">
+                        <button class="side-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="tooltip">Add to Cart</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span class="tooltip">Quick View</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="tooltip">Add to Wishlist</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-solid fa-arrow-right-arrow-left">
+                                <span class="tooltip">Add to Compare</span>
+                            </i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="product-category">Backpack, Wonder</p>
+                    <h3 class="product-name">Simple Modern School Boys</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="product-price">$102.00 <span class="old-price">$119.00</span></p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="product-card">
+                <div class="card-img-box">
+                    <img src="./assets/images/product/2/prodcut-3.jpg" alt="prodcut-3">
+                    <div class="side-actions">
+                        <button class="side-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="tooltip">Add to Cart</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span class="tooltip">Quick View</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="tooltip">Add to Wishlist</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-solid fa-arrow-right-arrow-left">
+                                <span class="tooltip">Add to Compare</span>
+                            </i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="product-category">Shoe, Men's</p>
+                    <h3 class="product-name">Women's Essentials Convertible</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="product-price">$45.00</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="product-card">
+                <div class="card-img-box">
+                    <img src="./assets/images/product/2/prodcut-4.jpg" alt="product-4">
+                    <div class="side-actions">
+                        <button class="side-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="tooltip">Add to Cart</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span class="tooltip">Quick View</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="tooltip">Add to Wishlist</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-solid fa-arrow-right-arrow-left">
+                                <span class="tooltip">Add to Compare</span>
+                            </i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="product-category">Bag, Wonder</p>
+                    <h3 class="product-name">Calvin Klein Gabrianna Novelty</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="product-price">$245.00 <span class="old-price">$120.00</span></p>
+                </div>
+            </div>
+
+            <!-- Cart 5 -->
+            <div class="product-card">
+                <div class="card-img-box">
+                    <img src="./assets/images/product/2/prodcut-5.jpg" alt="prodcut-5">
+                    <div class="side-actions">
+                        <button class="side-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="tooltip">Add to Cart</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span class="tooltip">Quick View</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="tooltip">Add to Wishlist</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-solid fa-arrow-right-arrow-left">
+                                <span class="tooltip">Add to Compare</span>
+                            </i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="product-category">Bag, Wonder</p>
+                    <h3 class="product-name">Tommy Hilfiger Women’s Jaden</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="product-price">$40.00 </p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="product-card">
+                <div class="card-img-box">
+                    <img src="./assets/images/product/2/prodcut-6.jpg" alt="prodcut-6">
+                    <div class="side-actions">
+                        <button class="side-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="tooltip">Add to Cart</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span class="tooltip">Quick View</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="tooltip">Add to Wishlist</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-solid fa-arrow-right-arrow-left">
+                                <span class="tooltip">Add to Compare</span>
+                            </i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="product-category">Shoes, Work Dress</p>
+                    <h3 class="product-name">Govicta Men's Shoes Leather</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="product-price">$75.00 <span class="old-price">$79.00</span></p>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="product-card">
+                <div class="card-img-box">
+                    <img src="./assets/images/product/2/prodcut-7.jpg" alt="prodcut-7">
+                    <div class="side-actions">
+                        <button class="side-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="tooltip">Add to Cart</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span class="tooltip">Quick View</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="tooltip">Add to Wishlist</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-solid fa-arrow-right-arrow-left">
+                                <span class="tooltip">Add to Compare</span>
+                            </i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="product-category">Mens, Whitetails Store</p>
+                    <h3 class="product-name">Legendary Whitetails Men's.</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="product-price">$38.00</p>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="product-card">
+                <div class="card-img-box">
+                    <img src="./assets/images/product/2/prodcut-8.jpg" alt="prodcut-8">
+                    <div class="side-actions">
+                        <button class="side-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="tooltip">Add to Cart</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-eye"></i>
+                            <span class="tooltip">Quick View</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="tooltip">Add to Wishlist</span>
+                        </button>
+                        <button class="side-btn">
+                            <i class="fa-solid fa-arrow-right-arrow-left">
+                                <span class="tooltip">Add to Compare</span>
+                            </i></button>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <p class="product-category">Mens, Whitetails Store</p>
+                    <h3 class="product-name">Backpack, School Bag.</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="product-price">$105.00</p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+
+        <!-- Week's Featured -->
+        <div class="section-wrap">
+            <h4 class="section-subtitle">Shop by Category</h4>
+            <h2 class="section-heading">This Week's Featured</h2>
+        </div>
+
+        <div class="featured-area">
+
+            <div class="featured-item">
+                <div class="featured-content">
+                    <h3 class="featured-title">Non Slip Athletic Tennis Walking</h3>
+                    <div class="featured-price">
+                        <span class="price-current">$220.00</span>
+                        <span class="price-old">$350.00</span>
+                    </div>
+                    <div class="featured-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                   <a href="#" class="featured-btn btn-border">
+                        Shop Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="featured-thumb">
+                    <img src="./assets/images/product/slider/product-slider-2.jpg" alt="Tennis Shoes">
+                </div>
+            </div>
+
+            <div class="featured-item">
+                <div class="featured-content">
+                    <h3 class="featured-title">Vera Bradley Straw Tote Bag</h3>
+                    <div class="featured-price">
+                        <span class="price-current">$46.00</span>
+                        <span class="price-old">$96.00</span>
+                    </div>
+                    <div class="featured-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="featured-btn btn-border">
+                        Shop Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="featured-thumb">
+                    <img src="./assets/images/product/slider/product-slider-3.jpg" alt="Straw Tote Bag">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scroll to Top -->
+        <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+
 
 </body>
 
